@@ -15,6 +15,9 @@ makeActive = function() {
 for (var i = 0; i < elems.length; i++)
     elems[i].addEventListener('mousedown', makeActive);
 
+
+
+
 //  Add class on Scroll Navbar
 
 var sections = document.querySelectorAll("section");
@@ -66,17 +69,23 @@ navLinks.forEach((link) => {
     });
 });
 
+
+
 // Scrolling Change Navbar Color
 var navbar = document.querySelector('navbar')
-
+var navbarCollapse = document.querySelector('.navbar-collapse')
 window.onscroll = function() {
     // pageYOffset or scrollY
     if (window.pageYOffset > 500) {
         navbar.classList.add('navbar_scrolled')
+        navbarCollapse.classList.add('navbar-collapse_color');
     } else {
         navbar.classList.remove('navbar_scrolled')
+        navbarCollapse.classList.remove('navbar-collapse_color');
     }
 }
+
+
 
 
 // Menu Sections Js

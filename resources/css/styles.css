@@ -128,6 +128,10 @@ body {
     height: 80px;
 }
 
+.navbar-collapse_color {
+    background-color: var(--tCoderBD_background_transparent_Color);
+}
+
 
 /* 03.Home CSS */
 

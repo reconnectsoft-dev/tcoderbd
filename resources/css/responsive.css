@@ -1,6 +1,6 @@
 /*Screen Layout: 992px. */
 
-@media only screen and (min-width: 992px) and (max-width: 1300px) {
+@media only screen and (min-width: 992px) and (max-width: 1326px) {
     .navbar-brand {
         color: var(--tCoderBD_white_color);
         padding: 10px 0px 5px 0px !important;
