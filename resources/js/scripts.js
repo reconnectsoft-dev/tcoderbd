@@ -17,14 +17,23 @@ for (var i = 0; i < elems.length; i++)
 
 
 
+//  Add class on Scroll Navbar and Change Navbar Color 
 
-//  Add class on Scroll Navbar
-
+var navbar = document.querySelector('navbar')
+var navbarCollapse = document.querySelector('.navbar-collapse')
 var sections = document.querySelectorAll("section");
 
 onscroll = function() {
     var scrollPosition = document.documentElement.scrollTop;
 
+    // pageYOffset or scrollY
+    if (window.pageYOffset > 500) {
+        navbar.classList.add('navbar_scrolled')
+        navbarCollapse.classList.add('navbar-collapse_color');
+    } else {
+        navbar.classList.remove('navbar_scrolled')
+        navbarCollapse.classList.remove('navbar-collapse_color');
+    }
     sections.forEach((section) => {
         if (
             scrollPosition >= section.offsetTop - section.offsetHeight * 0.25 &&
@@ -68,22 +77,6 @@ navLinks.forEach((link) => {
         });
     });
 });
-
-
-
-// Scrolling Change Navbar Color
-var navbar = document.querySelector('navbar')
-var navbarCollapse = document.querySelector('.navbar-collapse')
-window.onscroll = function() {
-    // pageYOffset or scrollY
-    if (window.pageYOffset > 500) {
-        navbar.classList.add('navbar_scrolled')
-        navbarCollapse.classList.add('navbar-collapse_color');
-    } else {
-        navbar.classList.remove('navbar_scrolled')
-        navbarCollapse.classList.remove('navbar-collapse_color');
-    }
-}
 
 
 

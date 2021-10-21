@@ -136,7 +136,7 @@ body {
 /* 03.Home CSS */
 
 .home__background {
-    background-image: linear-gradient(var(--tCoderBD_background_transparent_Color), #ac74344b), url(../images/background/background-1.png);
+    background-image: linear-gradient(#ec4d0f, #ff35007a), url(../images/background/background-1.png);
     height: 99vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,4 +195,65 @@ body {
 
 .about__user_friendly_bottom_margin {
     background: 2px solid black;
+}
+
+
+/* Skills */
+
+.progress-bar {
+    background-color: var(--tCoderBD_Button_Hover_Color);
+}
+
+
+/* Services */
+
+.services_main .icon-box {
+    width: 66px;
+    height: 66px;
+    border: 1px solid var(--tCoderBD_Button_Hover_Color);
+    border-radius: 5px;
+    text-align: center;
+    transform: rotate(-45deg);
+}
+
+.services_main .icon-box img {
+    transform: rotate(45deg);
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.about_read_more_button {
+    padding: 10px 40px;
+    border: 1px solid var(--tCoderBD_Button_Hover_Color);
+    background-color: var(--tCoderBD_white_color);
+    transition: 0.4s;
+}
+
+.about_read_more_button:hover {
+    background-color: var(--tCoderBD_Button_Hover_Color);
+    color: white;
+}
+
+
+/* Count  */
+
+.count__background {
+    background-image: linear-gradient(#e02916c7, #f40a0a87), url(../images/background/background-2.png);
+    height: 35vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.count__background .container {
+    color: white;
+    text-transform: uppercase;
+    padding-left: 100px;
+}
+
+.count__background img {
+    height: 55px;
+    padding-right: 15px;
 }
