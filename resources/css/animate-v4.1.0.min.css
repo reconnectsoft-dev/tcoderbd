@@ -10,7 +10,7 @@
 
 :root {
     --animate-duration: 2s;
-    --animate-delay: 2s;
+    --animate-delay: 1s;
     --animate-repeat: 1
 }
 

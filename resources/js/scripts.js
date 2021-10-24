@@ -81,56 +81,109 @@ navLinks.forEach((link) => {
 
 
 
-// Menu Sections Js
-function breakfast() {
+// Portfolio Sections Js
 
-    document.getElementById("breakfast").classList.add('active');
-    document.getElementById("lunch").classList.remove('active');
-    document.getElementById("dinner").classList.remove('active');
-    document.getElementById("main-dish").classList.remove('active');
+document.getElementById("portfolio_print").style.display = "none";
+document.getElementById("portfolio_position").style.display = "none";
+document.getElementById("portfolio_identity").style.display = "none";
+document.getElementById("portfolio_branding").style.display = "none";
 
-    document.getElementById("breakfast_link").classList.add('active');
-    document.getElementById("lunch_link").classList.remove('active');
-    document.getElementById("dinner_link").classList.remove('active');
-    document.getElementById("main-dish_link").classList.remove('active');
+
+function all_menu() {
+
+    // Take Menu ID
+    document.getElementById("all_menu").classList.add('list_group_item_active');
+    document.getElementById("print_menu").classList.remove('list_group_item_active');
+    document.getElementById("position_menu").classList.remove('list_group_item_active');
+    document.getElementById("identity_menu").classList.remove('list_group_item_active');
+    document.getElementById("branding_menu").classList.remove('list_group_item_active');
+
+
+
+    // Display Section
+    document.getElementById("portfolio_all").style.display = "block";
+    document.getElementById("portfolio_print").style.display = "none";
+    document.getElementById("portfolio_position").style.display = "none";
+    document.getElementById("portfolio_identity").style.display = "none";
+    document.getElementById("portfolio_branding").style.display = "none";
 }
 
-function lunch() {
+function print_menu() {
 
-    document.getElementById("breakfast").classList.remove('active');
-    document.getElementById("lunch").classList.add('active');
-    document.getElementById("dinner").classList.remove('active');
-    document.getElementById("main-dish").classList.remove('active');
+    // Take Menu ID
+    document.getElementById("all_menu").classList.remove('list_group_item_active');
+    document.getElementById("print_menu").classList.add('list_group_item_active');
+    document.getElementById("position_menu").classList.remove('list_group_item_active');
+    document.getElementById("identity_menu").classList.remove('list_group_item_active');
+    document.getElementById("branding_menu").classList.remove('list_group_item_active');
 
-    document.getElementById("breakfast_link").classList.remove('active');
-    document.getElementById("lunch_link").classList.add('active');
-    document.getElementById("dinner_link").classList.remove('active');
-    document.getElementById("main-dish_link").classList.remove('active');
+
+
+    // Display Section
+    document.getElementById("portfolio_all").style.display = "none";
+    document.getElementById("portfolio_print").style.display = "block";
+    document.getElementById("portfolio_position").style.display = "none";
+    document.getElementById("portfolio_identity").style.display = "none";
+    document.getElementById("portfolio_branding").style.display = "none";
 }
 
-function dinner() {
-    document.getElementById("breakfast").classList.remove('active');
-    document.getElementById("lunch").classList.remove('active');
-    document.getElementById("dinner").classList.add('active');
-    document.getElementById("main-dish").classList.remove('active');
+function position_menu() {
 
-    document.getElementById("breakfast_link").classList.remove('active');
-    document.getElementById("lunch_link").classList.remove('active');
-    document.getElementById("dinner_link").classList.add('active');
-    document.getElementById("main-dish_link").classList.remove('active');
+    // Take Menu ID
+    document.getElementById("all_menu").classList.remove('list_group_item_active');
+    document.getElementById("print_menu").classList.remove('list_group_item_active');
+    document.getElementById("position_menu").classList.add('list_group_item_active');
+    document.getElementById("identity_menu").classList.remove('list_group_item_active');
+    document.getElementById("branding_menu").classList.remove('list_group_item_active');
+
+
+
+    // Display Section
+    document.getElementById("portfolio_all").style.display = "none";
+    document.getElementById("portfolio_print").style.display = "none";
+    document.getElementById("portfolio_position").style.display = "block";
+    document.getElementById("portfolio_identity").style.display = "none";
+    document.getElementById("portfolio_branding").style.display = "none";
 }
 
-function main_dish() {
-    document.getElementById("breakfast").classList.remove('active');
-    document.getElementById("lunch").classList.remove('active');
-    document.getElementById("dinner").classList.remove('active');
-    document.getElementById("main-dish").classList.add('active');
+function identity_menu() {
 
-    document.getElementById("breakfast_link").classList.remove('active');
-    document.getElementById("lunch_link").classList.remove('active');
-    document.getElementById("dinner_link").classList.remove('active');
-    document.getElementById("main-dish_link").classList.add('active');
+    // Take Menu ID
+    document.getElementById("all_menu").classList.remove('list_group_item_active');
+    document.getElementById("print_menu").classList.remove('list_group_item_active');
+    document.getElementById("position_menu").classList.remove('list_group_item_active');
+    document.getElementById("identity_menu").classList.add('list_group_item_active');
+    document.getElementById("branding_menu").classList.remove('list_group_item_active');
+
+
+
+    // Display Section
+    document.getElementById("portfolio_all").style.display = "none";
+    document.getElementById("portfolio_print").style.display = "none";
+    document.getElementById("portfolio_position").style.display = "none";
+    document.getElementById("portfolio_identity").style.display = "block";
+    document.getElementById("portfolio_branding").style.display = "none";
 }
+
+function branding_menu() {
+
+    // Take Menu ID
+    document.getElementById("all_menu").classList.remove('list_group_item_active');
+    document.getElementById("print_menu").classList.remove('list_group_item_active');
+    document.getElementById("position_menu").classList.remove('list_group_item_active');
+    document.getElementById("identity_menu").classList.remove('list_group_item_active');
+    document.getElementById("branding_menu").classList.add('list_group_item_active');
+
+
+
+    // Display Section
+    document.getElementById("portfolio_all").style.display = "none";
+    document.getElementById("portfolio_print").style.display = "none";
+    document.getElementById("portfolio_position").style.display = "none";
+    document.getElementById("portfolio_identity").style.display = "none";
+    document.getElementById("portfolio_branding").style.display = "block";
+}
+
 
 // Loading Preloader
 function onload_function() {

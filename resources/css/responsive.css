@@ -65,6 +65,13 @@
     .about__user_friendly_margin {
         display: none;
     }
+    .portfolio__text__bottom {
+        font-size: 12px;
+    }
+    .portfolio_showcasing {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 }
 
 
@@ -104,7 +111,7 @@
     }
     /* Count Background */
     .count__background {
-        height: 40vh;
+        height: 70vh;
     }
     .count__background .container {
         padding: 100px;
@@ -119,6 +126,28 @@
     .count__background h6 {
         font-size: 12px;
         margin-bottom: 15px;
+    }
+    .portfolio__text__bottom {
+        font-size: 10px;
+    }
+    .portfolio_showcasing {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .portfolio__overlay_middle_section {
+        bottom: 2%;
+        left: 3%;
+        right: 2%;
+        top: 5%;
+        width: 94%;
+        height: 90%;
+    }
+    .watch_text {
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .single-testimonial {
+        padding: 10px;
     }
 }
 
@@ -159,6 +188,13 @@
         font-size: 9px;
         margin-bottom: 15px;
     }
+    .portfolio__text__bottom {
+        font-size: 10px !important;
+    }
+    .portfolio_showcasing {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 }
 
 @media only screen and (max-width: 479px) {
@@ -172,5 +208,16 @@
     .count__background img {
         height: 20px;
         padding-right: 10px;
+    }
+    .option_selection .list-group-item {
+        font-size: 12px;
+        padding: 0.1rem 0.4rem;
+    }
+    .portfolio__text__bottom {
+        font-size: 10px !important;
+    }
+    .portfolio_showcasing {
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 }

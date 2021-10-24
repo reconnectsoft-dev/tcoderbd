@@ -8,6 +8,12 @@
 ## 02. Preloader CSS
 ## 03. Navbar CSS
 ## 04. About CSS
+## 05. Portfolio CSS
+## 06. Watch Video CSS
+## 07. Team CSS
+## 08. Testimonials CSS
+## 09. Partners CSS
+## 10.Blog Post CSS
 
 
 ###########################################################
@@ -36,10 +42,53 @@ body {
     --tCoderBD_third_background_transparent_Color: #10100f;
     --tCoderBD_footer_background_color: #e84c3d;
     --tCoderBD_transparent_Color: #d2521f0c;
+    --tCoderBD_portfolio_background_Color: #f6f6f6;
+    --tCoderBD_portfolio_overlay_color: #f52112c9;
+    --tCoderBD_blog_background_color: #E84C3D;
 }
 
 .description_p {
     font-size: 13px;
+}
+
+.overlay_container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay_image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    right: 2%;
+    top: 2%;
+    overflow: hidden;
+    width: 96%;
+    height: 96%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--tCoderBD_portfolio_overlay_color);
+}
+
+.overlay_text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay_container:hover .overlay {
+    opacity: 1;
 }
 
 
@@ -137,7 +186,8 @@ body {
 
 .home__background {
     background-image: linear-gradient(#ec4d0f, #ff35007a), url(../images/background/background-1.png);
-    height: 99vh;
+    height: 100vh;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -239,8 +289,7 @@ body {
 
 .count__background {
     background-image: linear-gradient(#e02916c7, #f40a0a87), url(../images/background/background-2.png);
-    height: 35vh;
-    width: 100%;
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -250,10 +299,610 @@ body {
 .count__background .container {
     color: white;
     text-transform: uppercase;
-    padding-left: 100px;
+    padding: 100px;
 }
 
 .count__background img {
     height: 55px;
     padding-right: 15px;
+}
+
+
+/* 05. Portfolio CSS */
+
+.portfolio_section {
+    background-color: var(--tCoderBD_portfolio_background_Color);
+    padding: 50px;
+}
+
+.option_selection {
+    position: relative;
+}
+
+.option_selection .list-group-item {
+    border: 1px solid transparent;
+    padding: 0.1rem 1rem;
+    background-color: transparent;
+}
+
+.option_selection .list-group-item:hover {
+    color: var(--tCoderBD_Button_Hover_Color);
+    border: 1px solid var(--tCoderBD_Button_Hover_Color);
+    padding: 0.1rem 1rem;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.list_group_item_active {
+    color: var(--tCoderBD_Button_Hover_Color) !important;
+    border: 1px solid var(--tCoderBD_Button_Hover_Color) !important;
+}
+
+
+/* Single Item Hover */
+
+.single__item__container {
+    position: relative;
+    width: 100%;
+    padding: 1px;
+}
+
+.portfolio__images {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio__overlay {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    right: 2%;
+    top: 2%;
+    background-color: var(--tCoderBD_portfolio_overlay_color);
+    overflow: hidden;
+    width: 96%;
+    height: 96%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.portfolio__overlay_middle_section {
+    bottom: 3%;
+    left: 2%;
+    right: 3%;
+    top: 5%;
+    width: 96%;
+    height: 90%;
+}
+
+.single__item__container:hover .portfolio__overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.portfolio__text__middle {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.portfolio__text__bottom {
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 100px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.first_row_section img {
+    height: 200px;
+}
+
+.second_row_section img {
+    height: 300px;
+}
+
+.portfolio_plus_sign {
+    font-size: 30px;
+}
+
+.middle_section img {
+    height: 146px !important;
+}
+
+.portfolio__text__middle img {
+    height: 70px !important;
+}
+
+.height_middle {
+    height: 50%;
+}
+
+.portfolio__text__bottom_middle {
+    top: 90%;
+    left: 40px;
+    padding-bottom: 10px;
+}
+
+
+/* 06. Watch Video CSS */
+
+.watch_video {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../images/background/video_background.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+}
+
+.watch_video_title {
+    text-transform: uppercase !important;
+    color: var(--tCoderBD_white_color);
+}
+
+.watch_text {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+/* 07. Team CSS */
+
+.team_h5 {
+    text-transform: uppercase !important;
+    color: #4f4f4f;
+}
+
+.card-body a {
+    color: #272727;
+}
+
+.card-body a:hover {
+    color: #f03c2a;
+}
+
+.card-img-top {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    background-color: var(--tCoderBD_portfolio_background_Color);
+}
+
+.card-body i {
+    padding-right: 10px;
+}
+
+.card img {
+    height: 300px !important;
+}
+
+
+/* 08. Testimonials Section */
+
+.testimonial {
+    background-color: #ddd;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* text-align: center; */
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    height: 100vh;
+}
+
+.testimonial {
+    background-image: linear-gradient(#000000c7, #00000087), url(../images/background/background-4.png);
+}
+
+.testimonials_h5 {
+    text-transform: uppercase !important;
+    color: var(--tCoderBD_Button_Hover_Color);
+    letter-spacing: 3px;
+}
+
+.testimonial_text_p {
+    font-size: 13px;
+    color: var(--tCoderBD_white_color);
+    font-style: italic;
+}
+
+.testimonial:before {
+    content: "";
+    /* background: rgba(0, 0, 0, .5); */
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+
+.single-testimonial h1 {
+    font-size: 60px;
+    margin: 0 0 25px;
+    color: var(--tCoderBD_Button_Hover_Color);
+}
+
+.testimonial-image {
+    width: 165px;
+    height: 165px;
+    border-radius: 100%;
+    margin: 0 auto 0px;
+    padding-top: 0px;
+}
+
+.single-testimonial {
+    background-color: transparent;
+    padding: 50px;
+}
+
+#clientsFeedback .carousel-item:before {
+    content: "";
+    background: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-indicators button {
+    background-color: transparent !important;
+    border: 1px solid var(--tCoderBD_blog_background_color) !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+    display: inline-block !important;
+    margin: 0 5px !important;
+    margin-bottom: 50px !important;
+}
+
+.carousel-indicators button:hover {
+    background-color: var(--tCoderBD_blog_background_color) !important;
+}
+
+.carousel-indicators .active {
+    background-color: var(--tCoderBD_blog_background_color) !important;
+}
+
+
+/* 09. Paerners Section */
+
+
+/* Partners Section  */
+
+.partner-box img {
+    max-width: 100%;
+    display: block;
+    padding: .5em 2rem;
+}
+
+.ec {
+    position: relative;
+}
+
+.ec .ec__holder {
+    overflow: hidden
+}
+
+.ec .ec__track {
+    will-change: transform
+}
+
+.ec .ec__track:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.ec .ec__item {
+    float: left;
+    overflow: hidden
+}
+
+.ec .ec__pagination {
+    text-align: center;
+    margin-top: 10px
+}
+
+.ec .ec__pagination .pagination__dot {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    display: inline-block;
+    border: 1px solid #000;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.ec .ec__pagination .pagination__dot--active {
+    background-color: #000
+}
+
+.ec .ec__nav {
+    position: absolute;
+    bottom: 50%;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    width: 8px;
+    height: 8px;
+    cursor: pointer
+}
+
+.ec .ec__nav:before {
+    content: ''
+}
+
+.ec .ec__nav--prev {
+    transform: rotate(-135deg);
+    left: 1em
+}
+
+.ec .ec__nav--next {
+    transform: rotate(45deg);
+    right: 1em
+}
+
+
+/* 10.Blog Post CSS */
+
+
+/* Blog Posts Section  */
+
+.blog_posts_card {
+    background-color: var(--tCoderBD_blog_background_color);
+    height: 250px;
+}
+
+.blog_posts_h5 {
+    text-transform: uppercase !important;
+    color: var(--tCoderBD_white_color);
+}
+
+.blog_posts_title {
+    height: 80px;
+}
+
+.blog_posts_text {
+    height: 100px;
+    color: var(--tCoderBD_white_color);
+}
+
+
+/* 13.Footer Section CSS */
+
+
+/* Get in touch section  */
+
+.contact-section {
+    height: 700px;
+    background-color: var(--tCoderBD_footer_background_color);
+}
+
+.contact-text {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.div1 {
+    float: left;
+}
+
+.footer_social_icon {
+    float: right;
+    color: white;
+}
+
+.footer_social_icon:hover {
+    float: right;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Contact form  */
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+    color: #ffffff;
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #ffffff;
+    color: #ffffff;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+ ::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+ :-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+ ::-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+ :-ms-input-placeholder {
+    color: #ffffff;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: #ffffff;
+    color: var(--tCoderBD_footer_background_color);
+    border: solid 2px var(--tCoderBD_footer_background_color);
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
+    .contact-section {
+        height: 1000px;
+        background-color: var(--tCoderBD_footer_background_color);
+    }
+    .footer_social_icon {
+        float: left;
+        justify-content: center;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+    .underline {
+        width: 68px;
+    }
+    /* #form_button {
+      padding: 15px 25px;
+    } */
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+    .underline {
+        width: 53px;
+    }
+    input[type='text'],
+    [type='email'],
+    select,
+    textarea {
+        font-size: 0.875em;
+    }
 }
