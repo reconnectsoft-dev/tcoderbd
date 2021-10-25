@@ -14,7 +14,7 @@
 ## 08. Testimonials CSS
 ## 09. Partners CSS
 ## 10.Blog Post CSS
-
+## 11. Subscribe section CSS
 
 ###########################################################
 */
@@ -312,7 +312,7 @@ body {
 
 .portfolio_section {
     background-color: var(--tCoderBD_portfolio_background_Color);
-    padding: 50px;
+    padding: 10px;
 }
 
 .option_selection {
@@ -454,6 +454,7 @@ body {
 .watch_video_title {
     text-transform: uppercase !important;
     color: var(--tCoderBD_white_color);
+    padding-top: 0px !important;
 }
 
 .watch_text {
@@ -533,7 +534,7 @@ body {
     /* background: rgba(0, 0, 0, .5); */
     position: absolute;
     left: 0;
-    height: 100%;
+    height: 100vh;
     top: 0;
     width: 100%;
 }
@@ -696,26 +697,26 @@ body {
 
 /* Get in touch section  */
 
-.contact-section {
-    height: 700px;
+#get-in-touch .contact-section {
+    height: 85vh;
     background-color: var(--tCoderBD_footer_background_color);
 }
 
-.contact-text {
+#get-in-touch .contact-text {
     font-size: 15px;
     padding-bottom: 5px;
 }
 
-.div1 {
+#get-in-touch .div1 {
     float: left;
 }
 
-.footer_social_icon {
+#get-in-touch .footer_social_icon {
     float: right;
     color: white;
 }
 
-.footer_social_icon:hover {
+#get-in-touch .footer_social_icon:hover {
     float: right;
     color: rgb(0, 0, 0);
 }
@@ -723,16 +724,16 @@ body {
 
 /* Contact form  */
 
-button {
+#get-in-touch button {
     overflow: visible;
 }
 
-button,
+#get-in-touch button,
 select {
     text-transform: none;
 }
 
-button,
+#get-in-touch button,
 input,
 select,
 textarea {
@@ -741,25 +742,24 @@ textarea {
     margin: 0;
 }
 
-input {
+#get-in-touch input {
     line-height: normal;
 }
 
-textarea {
+#get-in-touch textarea {
     overflow: auto;
 }
 
-form {
-    padding: 37.5px;
+#get-in-touch form {
     margin: 50px 0;
 }
 
-.email {
+#get-in-touch .email {
     float: right;
     width: 45%;
 }
 
-input[type='text'],
+#get-in-touch input[type='text'],
 [type='email'],
 select,
 textarea {
@@ -786,56 +786,56 @@ textarea {
     transition: all 0.3s;
 }
 
-input[type='text']:focus,
+#get-in-touch input[type='text']:focus,
 [type='email']:focus,
 textarea:focus {
     outline: none;
     padding: 0 0 0.875em 0;
 }
 
-.message {
+#get-in-touch .message {
     float: none;
 }
 
-.name {
+#get-in-touch .name {
     float: left;
     width: 45%;
 }
 
-.subject {
+#get-in-touch .subject {
     width: 100%;
 }
 
-.telephone {
+#get-in-touch .telephone {
     width: 100%;
 }
 
-textarea {
+#get-in-touch textarea {
     line-height: 150%;
     height: 150px;
     resize: none;
     width: 100%;
 }
 
- ::-webkit-input-placeholder {
+#get-in-touch ::-webkit-input-placeholder {
     color: #ffffff;
 }
 
- :-moz-placeholder {
-    color: #ffffff;
-    opacity: 1;
-}
-
- ::-moz-placeholder {
+#get-in-touch :-moz-placeholder {
     color: #ffffff;
     opacity: 1;
 }
 
- :-ms-input-placeholder {
+#get-in-touch ::-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+#get-in-touch :-ms-input-placeholder {
     color: #ffffff;
 }
 
-#form_button {
+#get-in-touch #form_button {
     background: none;
     border: solid 2px #ffffff;
     color: #ffffff;
@@ -854,22 +854,22 @@ textarea {
     transition: all 0.3s;
 }
 
-#form_button:hover {
+#get-in-touch #form_button:hover {
     background: #ffffff;
     color: var(--tCoderBD_footer_background_color);
     border: solid 2px var(--tCoderBD_footer_background_color);
 }
 
 @media screen and (max-width: 768px) {
-    #container {
+    #get-in-touch #container {
         margin: 20px auto;
         width: 95%;
     }
-    .contact-section {
+    #get-in-touch .contact-section {
         height: 1000px;
         background-color: var(--tCoderBD_footer_background_color);
     }
-    .footer_social_icon {
+    #get-in-touch.footer_social_icon {
         float: left;
         justify-content: center;
         padding-top: 10px;
@@ -877,32 +877,187 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
-    h1 {
+    #get-in-touch h1 {
         font-size: 26px;
     }
-    .underline {
+    #get-in-touch .underline {
         width: 68px;
     }
-    /* #form_button {
-      padding: 15px 25px;
-    } */
 }
 
 @media screen and (max-width: 420px) {
-    h1 {
+    #get-in-touch h1 {
         font-size: 18px;
     }
-    .icon {
+    #get-in-touch .icon {
         height: 35px;
         width: 35px;
     }
-    .underline {
+    #get-in-touch .underline {
         width: 53px;
     }
-    input[type='text'],
+    #get-in-touch input[type='text'],
     [type='email'],
     select,
     textarea {
         font-size: 0.875em;
     }
+}
+
+
+/* 11.Subscribe  CSS */
+
+.subscribe_section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.295)), url(../images/background/background_5.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    color: var(--tCoderBD_white_color);
+}
+
+.blog_section_title {
+    text-transform: uppercase !important;
+    color: var(--tCoderBD_white_color);
+    padding-top: 50px;
+    text-align: center;
+    color: var(--tCoderBD_Button_Hover_Color);
+}
+
+.subscribe_section .button {
+    padding: 10px 25px 10px 10px;
+    background-color: var(--tCoderBD_Button_Hover_Color);
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input_section {
+    position: relative;
+}
+
+.input_section .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background-color: var(--tCoderBD_transparent_Color);
+}
+
+.input_section .input-field::-webkit-input-placeholder {
+    padding-left: 40px;
+}
+
+.input_section .input-field::-moz-placeholder {
+    padding-left: 40px;
+}
+
+.input_section .input-field::-ms-input-placeholder {
+    padding-left: 40px;
+}
+
+.input_section .icon {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    font-size: 25px;
+}
+
+.subscribe_section .input_section {
+    border: 1px solid var(--tCoderBD_white_color);
+}
+
+
+/* 12. Pricing Table */
+
+.pricing_box .row {
+    padding: 50px;
+}
+
+.pricing_box .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+.pricing_box .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.09);
+}
+
+.pricing_box .price .header {
+    background-color: var(--tCoderBD_white_color);
+    color: var(--tCoderBD_Button_Hover_Color);
+    font-size: 25px;
+    padding: 30px 90px 120px 90px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.pricing_box .price li {
+    border-bottom: 1px solid rgb(216, 213, 213);
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.pricing_box .price .grey {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.pricing_box .button {
+    background-color: var(--tCoderBD_Button_Hover_Color);
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.pricing_box .buy_now_button li {
+    border: none !important;
+    padding: 30px;
+}
+
+.pricing_box .pricing_value_container li {
+    padding: 35px;
+}
+
+.pricing_box .pricing_value {
+    background-color: var(--tCoderBD_Button_Hover_Color);
+    padding: 30px;
+    border-radius: 50%;
+    color: var(--tCoderBD_white_color);
+    transition: 0.5s;
+}
+
+.pricing_box .price:hover .header {
+    background-color: var(--tCoderBD_Button_Hover_Color);
+    color: var(--tCoderBD_white_color);
+}
+
+.pricing_box .price:hover .pricing_value {
+    color: var(--tCoderBD_Button_Hover_Color);
+    background-color: var(--tCoderBD_white_color);
+}
+
+.pricing_box .pricing_amount {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.pricing_box .pricing_dollar {
+    font-size: 20px;
+}
+
+.pricing_box .pricing_month {
+    font-size: 12px;
+    text-transform: uppercase;
 }

@@ -8,8 +8,15 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); }
-        ownKeys.forEach(function(key) { _defineProperty(target, key, source[key]); }); } return target; }
+function _objectSpread(target) {
+    for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); }
+        ownKeys.forEach(function(key) { _defineProperty(target, key, source[key]); });
+    }
+    return target;
+}
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -267,7 +274,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
     ElderCarousel.defaults = {
         selector: '',
-        items: 3,
+        items: 4,
         step: 1,
         speed: 300,
         start: 0,

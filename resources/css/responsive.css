@@ -149,6 +149,22 @@
     .single-testimonial {
         padding: 10px;
     }
+    .testimonial-image img {
+        height: 150px;
+    }
+    .carousel-indicators button {
+        margin-bottom: 50px !important;
+    }
+    .pricing_box .columns {
+        width: 100%;
+    }
+    .pricing_box .price {
+        margin: 0px;
+        margin-top: 40px;
+    }
+    .pricing_box .row {
+        padding: 0px;
+    }
 }
 
 
@@ -195,9 +211,45 @@
         padding-left: 0rem;
         padding-right: 0rem;
     }
+    .blog_section_title {
+        padding-bottom: 0px !important;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .input_section .input-field {
+        width: 100%;
+        padding: 5px;
+        outline: none;
+        background-color: var(--tCoderBD_transparent_Color);
+    }
+    .input_section .input-field::-webkit-input-placeholder {
+        padding-left: 30px;
+    }
+    .input_section .input-field::-moz-placeholder {
+        padding-left: 30px;
+    }
+    .input_section .input-field::-ms-input-placeholder {
+        padding-left: 30px;
+    }
+    .input_section .icon {
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        font-size: 25px;
+    }
+    .pricing_box .columns {
+        width: 100%;
+    }
+    .pricing_box .price {
+        margin: 0px;
+        margin-top: 40px;
+    }
+    .pricing_box .row {
+        padding: 0px;
+    }
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 478px) {
     .count__background h4 {
         font-size: 10px;
     }
@@ -219,5 +271,72 @@
     .portfolio_showcasing {
         padding-left: 0rem;
         padding-right: 0rem;
+    }
+    .testimonials_h5 {
+        padding-top: 10px !important;
+    }
+    .testimonial .testimonial_text_p,
+    .description_p {
+        font-size: 12px !important;
+    }
+    .testimonial-image {
+        width: 120px;
+        height: 120px;
+    }
+    .testimonial-image img {
+        height: 120px;
+        width: 120px;
+    }
+    .carousel-indicators button {
+        margin-bottom: 10px !important;
+    }
+    .blog_section_title {
+        padding-bottom: 0px !important;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .subscribe_section .button {
+        padding: 10px 25px 10px 10px;
+        background-color: var(--tCoderBD_Button_Hover_Color);
+        color: white;
+        text-align: center;
+    }
+    .input_section .input-field {
+        width: 100%;
+        padding: 0px;
+        outline: none;
+        background-color: var(--tCoderBD_transparent_Color);
+    }
+    .input_section .input-field::-webkit-input-placeholder {
+        padding-left: 40px;
+    }
+    .input_section .input-field::-moz-placeholder {
+        padding-left: 40px;
+    }
+    .input_section .input-field::-ms-input-placeholder {
+        padding-left: 40px;
+    }
+    .input_section .icon {
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        font-size: 25px;
+    }
+    .pricing_box .columns {
+        width: 100%;
+    }
+    .pricing_box .price {
+        margin: 0px;
+        margin-top: 40px;
+    }
+    .pricing_box .row {
+        padding: 0px;
+    }
+    .pricing_box .price .header {
+        font-size: 15px;
+    }
+    .pricing_box .button {
+        padding: 5px 10px;
+        font-size: 12px;
     }
 }
