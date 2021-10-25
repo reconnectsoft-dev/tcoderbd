@@ -202,12 +202,25 @@
         border-radius: 10px;
     }
     /* Count Background */
+    .count__background .count_padding {
+        padding-top: 10px;
+    }
     .count__background .container {
         padding-top: 50px;
-        font-size: 16px;
+        font-size: 10px;
     }
     .count__background {
         height: 50vh;
+    }
+    .count__background h4 {
+        font-size: 16px;
+    }
+    .count__background h6 {
+        font-size: 12px;
+    }
+    .count__background img {
+        height: 40px;
+        padding-right: 15px;
     }
     .navbar-toggle {
         border-color: var(--tCoderBD_white_color);
@@ -304,6 +317,9 @@
         text-align: center;
     }
     /* Count Background */
+    .count__background .count_padding {
+        padding-top: 10px;
+    }
     .count__background .container {
         padding-top: 30px;
     }
