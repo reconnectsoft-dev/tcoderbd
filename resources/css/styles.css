@@ -23,7 +23,8 @@
 /* 01.Root Css */
 
 @import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-html {
+* {
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -289,7 +290,7 @@ body {
 
 .count__background {
     background-image: linear-gradient(#e02916c7, #f40a0a87), url(../images/background/background-2.png);
-    height: 40vh;
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -301,11 +302,12 @@ body {
 .count__background .container {
     color: white;
     text-transform: uppercase;
-    padding: 100px;
+    padding-top: 150px;
 }
 
 .count__background img {
     height: 55px;
+    width: 50px;
     padding-right: 15px;
 }
 
@@ -314,7 +316,7 @@ body {
 
 .portfolio_section {
     background-color: var(--tCoderBD_portfolio_background_Color);
-    padding: 100px 10px 100px 10px;
+    padding: 100px 150px 100px 150px;
 }
 
 .option_selection {
@@ -945,18 +947,6 @@ textarea:focus {
     background-color: var(--tCoderBD_transparent_Color);
 }
 
-.input_section .input-field::-webkit-input-placeholder {
-    padding-left: 40px;
-}
-
-.input_section .input-field::-moz-placeholder {
-    padding-left: 40px;
-}
-
-.input_section .input-field::-ms-input-placeholder {
-    padding-left: 40px;
-}
-
 .input_section .icon {
     position: absolute;
     top: 20%;
@@ -1002,7 +992,7 @@ textarea:focus {
 
 .pricing_box .price li {
     border-bottom: 1px solid rgb(216, 213, 213);
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     background-color: #eee;
 }
@@ -1060,4 +1050,127 @@ textarea:focus {
 .pricing_box .pricing_month {
     font-size: 12px;
     text-transform: uppercase;
+}
+
+
+/* Progress bar section */
+
+.progress_bar_section .bar {
+    margin: 20px 0;
+}
+
+.progress_bar_section .bar:first-child {
+    margin-top: 0px;
+}
+
+.progress_bar_section .bar .info {
+    margin-bottom: 5px;
+}
+
+.progress_bar_section .bar .info span {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress_bar_section .bar .progress-line {
+    height: 12px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress_bar_section .bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: var(--tCoderBD_Button_Hover_Color);
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress_bar_section .bar .progress-line.html span {
+    width: 90%;
+}
+
+.progress_bar_section .bar .progress-line.css span {
+    width: 60%;
+}
+
+.progress_bar_section .bar .progress-line.jquery span {
+    width: 85%;
+}
+
+.progress_bar_section .bar .progress-line.python span {
+    width: 80%;
+}
+
+.progress_bar_section .progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress_bar_section .progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress_bar_section .progress-line.html span::after {
+    content: "90%";
+}
+
+.progress_bar_section .progress-line.css span::after {
+    content: "85%";
+}
+
+.progress_bar_section .progress-line.jquery span::after {
+    content: "85%";
+}
+
+.progress_bar_section .progress-line.python span::after {
+    content: "80%";
 }
