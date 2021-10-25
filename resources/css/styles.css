@@ -289,11 +289,13 @@ body {
 
 .count__background {
     background-image: linear-gradient(#e02916c7, #f40a0a87), url(../images/background/background-2.png);
-    height: 50vh;
+    height: 40vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    align-items: center;
+    color: var(--tCoderBD_white_color);
 }
 
 .count__background .container {
@@ -312,7 +314,7 @@ body {
 
 .portfolio_section {
     background-color: var(--tCoderBD_portfolio_background_Color);
-    padding: 10px;
+    padding: 100px 10px 100px 10px;
 }
 
 .option_selection {
@@ -707,17 +709,11 @@ body {
     padding-bottom: 5px;
 }
 
-#get-in-touch .div1 {
-    float: left;
-}
-
 #get-in-touch .footer_social_icon {
-    float: right;
     color: white;
 }
 
 #get-in-touch .footer_social_icon:hover {
-    float: right;
     color: rgb(0, 0, 0);
 }
 
@@ -815,6 +811,10 @@ textarea:focus {
     height: 150px;
     resize: none;
     width: 100%;
+}
+
+#get-in-touch .footer_social_icon .social_text_end {
+    text-align: end;
 }
 
 #get-in-touch ::-webkit-input-placeholder {
@@ -972,7 +972,7 @@ textarea:focus {
 /* 12. Pricing Table */
 
 .pricing_box .row {
-    padding: 50px;
+    padding: 100px;
 }
 
 .pricing_box .price {
@@ -993,7 +993,7 @@ textarea:focus {
 .pricing_box .price .header {
     background-color: var(--tCoderBD_white_color);
     color: var(--tCoderBD_Button_Hover_Color);
-    font-size: 25px;
+    font-size: 20px;
     padding: 30px 90px 120px 90px;
     text-transform: uppercase;
     font-weight: bold;

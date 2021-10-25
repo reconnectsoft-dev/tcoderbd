@@ -16,6 +16,20 @@
         margin-right: 0;
         padding: 5px 8px;
     }
+    /* Count Background */
+    .count__background {
+        height: 70vh;
+    }
+    .count__background img {
+        height: 40px;
+    }
+    .count__background h4 {
+        font-size: 15px;
+    }
+    .count__background h6 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
     .home__background__text__h1 {
         font-size: 35px;
     }
@@ -27,6 +41,12 @@
     }
     .about__user_friendly_margin {
         display: none;
+    }
+    #get-in-touch .footer_social_icon {
+        text-align: center;
+    }
+    #get-in-touch .footer_social_icon .social_text_end {
+        text-align: center;
     }
 }
 
@@ -53,6 +73,20 @@
         margin-right: 0;
         padding: 5px 8px;
     }
+    /* Count Background */
+    .count__background {
+        height: 50vh;
+    }
+    .count__background img {
+        height: 40px;
+    }
+    .count__background h4 {
+        font-size: 15px;
+    }
+    .count__background h6 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
     .home__background__text__h1 {
         font-size: 25px;
     }
@@ -71,6 +105,12 @@
     .portfolio_showcasing {
         padding-left: 0rem;
         padding-right: 0rem;
+    }
+    #get-in-touch .footer_social_icon {
+        text-align: center;
+    }
+    #get-in-touch .footer_social_icon .social_text_end {
+        text-align: center;
     }
 }
 
@@ -108,24 +148,6 @@
     }
     .about__user_friendly_margin {
         display: none;
-    }
-    /* Count Background */
-    .count__background {
-        height: 70vh;
-    }
-    .count__background .container {
-        padding: 100px;
-    }
-    .count__background img {
-        height: 40px;
-        padding-right: 10px;
-    }
-    .count__background h4 {
-        font-size: 15px;
-    }
-    .count__background h6 {
-        font-size: 12px;
-        margin-bottom: 15px;
     }
     .portfolio__text__bottom {
         font-size: 10px;
@@ -165,6 +187,12 @@
     .pricing_box .row {
         padding: 0px;
     }
+    #get-in-touch .footer_social_icon {
+        text-align: center;
+    }
+    #get-in-touch .footer_social_icon .social_text_end {
+        text-align: center;
+    }
 }
 
 
@@ -185,6 +213,20 @@
         padding: 10px 20px 10px 10px;
         border-radius: 10px;
     }
+    /* Count Background */
+    .count__background {
+        height: 70vh;
+    }
+    .count__background img {
+        height: 40px;
+    }
+    .count__background h4 {
+        font-size: 15px;
+    }
+    .count__background h6 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
     .navbar-toggle {
         border-color: var(--tCoderBD_white_color);
         margin-right: 0;
@@ -192,17 +234,6 @@
     }
     .about__user_friendly_margin {
         display: none;
-    }
-    .count__background img {
-        height: 25px;
-        padding-right: 10px;
-    }
-    .count__background h4 {
-        font-size: 12px;
-    }
-    .count__background h6 {
-        font-size: 9px;
-        margin-bottom: 15px;
     }
     .portfolio__text__bottom {
         font-size: 10px !important;
@@ -247,20 +278,15 @@
     .pricing_box .row {
         padding: 0px;
     }
+    #get-in-touch .footer_social_icon {
+        text-align: center;
+    }
+    #get-in-touch .footer_social_icon .social_text_end {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 478px) {
-    .count__background h4 {
-        font-size: 10px;
-    }
-    .count__background h6 {
-        font-size: 8px;
-        margin-bottom: 15px;
-    }
-    .count__background img {
-        height: 20px;
-        padding-right: 10px;
-    }
     .option_selection .list-group-item {
         font-size: 12px;
         padding: 0.1rem 0.4rem;
@@ -301,6 +327,20 @@
         color: white;
         text-align: center;
     }
+    /* Count Background */
+    .count__background {
+        height: 70vh;
+    }
+    .count__background img {
+        height: 40px;
+    }
+    .count__background h4 {
+        font-size: 15px;
+    }
+    .count__background h6 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
     .input_section .input-field {
         width: 100%;
         padding: 0px;
@@ -338,5 +378,11 @@
     .pricing_box .button {
         padding: 5px 10px;
         font-size: 12px;
+    }
+    #get-in-touch .footer_social_icon {
+        text-align: center;
+    }
+    #get-in-touch .footer_social_icon .social_text_end {
+        text-align: center;
     }
 }
