@@ -34,12 +34,18 @@
     #get-in-touch .footer_social_icon .social_text_end {
         text-align: center;
     }
+    .count__background {
+        height: 50vh;
+    }
 }
 
 
 /* Screen Layout: 768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .count__background {
+        height: 40vh;
+    }
     .navbar__varticalbar {
         display: none !important;
     }
@@ -201,7 +207,7 @@
         font-size: 16px;
     }
     .count__background {
-        height: 60vh;
+        height: 50vh;
     }
     .navbar-toggle {
         border-color: var(--tCoderBD_white_color);
