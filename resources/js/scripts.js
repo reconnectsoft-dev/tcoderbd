@@ -187,5 +187,5 @@ function branding_menu() {
 
 // Loading Preloader
 function onload_function() {
-    document.getElementById('preloader_foodcafe').style.display = "none";
+    document.getElementById('tCoder-preloader').style.display = "none";
 }

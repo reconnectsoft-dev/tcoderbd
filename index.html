@@ -33,6 +33,19 @@
 
 <body onload="onload_function()">
 
+
+    <!-- Preloader Section Starts -->
+    <div class="tCoder-preloader" id="tCoder-preloader">
+        <div class="spinner">
+            <div class="loader1"></div>
+            <div class="loader2"></div>
+            <div class="loader3"></div>
+            <div class="loader4"></div>
+            <div class="loader5"></div>
+        </div>
+    </div>
+    <!-- Preloader Section Ends -->
+
     <!-- Navbar Starts-->
     <section>
         <navbar class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -1025,87 +1038,93 @@
         </div>
 
         <!-- Testimonial section start  -->
-        <section id="team" class="carousel slide testimonial" data-bs-ride="carousel" data-bs-pause="false">
-            <div class="container ">
-                <h2 class="testimonials_h5 pt-5"> | Testimonials</h2>
-                <p class="description_p pb-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin,<br> College in Virginia, looked up one of the more obscure Latin words, consectet</p>
-            </div>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
-                        <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
-                            <div class="single-testimonial " style="visibility: visible;">
-                                <div class="testimonial-image">
-                                    <img class="img-fluid" src="resources/images/background/Ellipse 2.png">
-                                </div>
-                                <div class="text-center">
-                                    <h5 class="title about__user_friendly_h5 mt-2">Alex Tunir Maa</h5>
-                                    <p class="testimonial_text_p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro non hic suscipit explicabo laborum expedita exercitationem eos dolore quisquam nemo. Omnis numquam ab deleniti harum error natus non, maxime cum. Est eveniet</p>
+        <section id="team">
+            <div id="clientsFeedback" class="carousel slide testimonial" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="container ">
+                    <h2 class="testimonials_h5 pt-5"> | Testimonials</h2>
+                    <p class="description_p pb-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin,<br> College in Virginia, looked up one of the more obscure Latin words, consectet</p>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
+                            <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
+                                <div class="single-testimonial " style="visibility: visible;">
+                                    <div class="testimonial-image">
+                                        <img class="img-fluid" src="resources/images/background/Ellipse 2.png">
+                                    </div>
+                                    <div class="text-center">
+                                        <h5 class="title about__user_friendly_h5 mt-2">Alex Tunir Maa</h5>
+                                        <p class="testimonial_text_p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro non hic suscipit explicabo laborum expedita exercitationem eos dolore quisquam nemo. Omnis numquam ab deleniti harum error natus non, maxime cum. Est
+                                            eveniet
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
                         </div>
-                        <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
-                        <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
-                            <div class="single-testimonial animate__animated" style="visibility: visible; animation-name: animate__animated ">
-                                <div class="testimonial-image">
-                                    <img src="resources/images/background/Ellipse 2.png">
-                                </div>
-                                <div class="text-center">
-                                    <h5 class="title about__user_friendly_h5 mt-2">Alex Tunir Maa</h5>
-                                    <p class="testimonial_text_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora blanditiis delectus magni quibusdam nulla odit inventore eaque laudantium ea sit, maiores molestias eveniet natus, nam deserunt totam cumque eius distinctio</p>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
+                            <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
+                                <div class="single-testimonial animate__animated" style="visibility: visible; animation-name: animate__animated ">
+                                    <div class="testimonial-image">
+                                        <img src="resources/images/background/Ellipse 2.png">
+                                    </div>
+                                    <div class="text-center">
+                                        <h5 class="title about__user_friendly_h5 mt-2">Alex Tunir Maa</h5>
+                                        <p class="testimonial_text_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora blanditiis delectus magni quibusdam nulla odit inventore eaque laudantium ea sit, maiores molestias eveniet natus, nam deserunt totam cumque eius
+                                            distinctio
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
                         </div>
-                        <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
-                        <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
-                            <div class="single-testimonial  animate__animated " style="visibility: visible; animation-name: animate__animated ">
-                                <div class="testimonial-image">
-                                    <img src="resources/images/background/Ellipse 2.png">
-                                </div>
-                                <div class="text-center">
-                                    <h5 class="title about__user_friendly_h5 mt-2">Alex Tunir Maa</h5>
-                                    <p class="testimonial_text_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore a debitis ad dolor cupiditate enim neque exercitationem, illum assumenda ut quaerat vero odit provident expedita magni, veniam repellendus earum nihil</p>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
+                            <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
+                                <div class="single-testimonial  animate__animated " style="visibility: visible; animation-name: animate__animated ">
+                                    <div class="testimonial-image">
+                                        <img src="resources/images/background/Ellipse 2.png">
+                                    </div>
+                                    <div class="text-center">
+                                        <h5 class="title about__user_friendly_h5 mt-2">Alex Tunir Maa</h5>
+                                        <p class="testimonial_text_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore a debitis ad dolor cupiditate enim neque exercitationem, illum assumenda ut quaerat vero odit provident expedita magni, veniam repellendus earum nihil</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
                         </div>
-                        <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
-                        <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
-                            <div class="single-testimonial  animate__animated " style="visibility: visible; animation-name: animate__animated ">
-                                <div class="testimonial-image">
-                                    <img src="resources/images/background/Ellipse 2.png">
-                                </div>
-                                <div class="text-center">
-                                    <h5 class="title about__user_friendly_h5 mt-2">Alex Tunir Maa</h5>
-                                    <p class="testimonial_text_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore a debitis ad dolor cupiditate enim neque exercitationem, illum assumenda ut quaerat vero odit provident expedita magni, veniam repellendus earum nihil</p>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
+                            <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
+                                <div class="single-testimonial  animate__animated " style="visibility: visible; animation-name: animate__animated ">
+                                    <div class="testimonial-image">
+                                        <img src="resources/images/background/Ellipse 2.png">
+                                    </div>
+                                    <div class="text-center">
+                                        <h5 class="title about__user_friendly_h5 mt-2">Alex Tunir Maa</h5>
+                                        <p class="testimonial_text_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore a debitis ad dolor cupiditate enim neque exercitationem, illum assumenda ut quaerat vero odit provident expedita magni, veniam repellendus earum nihil</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
                         </div>
-                        <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
                     </div>
-                </div>
 
+                </div>
         </section>
 
         <!-- Testimonial section end  -->
@@ -1404,7 +1423,7 @@
             infinite: true
         })
 
-        const x = document.getElementById('partners').offsetWidth;
+        var x = document.getElementById('partners').offsetWidth;
 
 
         if (x > 762) {
