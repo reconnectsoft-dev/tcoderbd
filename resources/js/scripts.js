@@ -189,3 +189,23 @@ function branding_menu() {
 function onload_function() {
     document.getElementById('tCoder-preloader').style.display = "none";
 }
+
+// Scroll to specific values
+// scrollTo is the same
+window.scroll({
+    top: 2500,
+    left: 0,
+    behavior: 'smooth'
+});
+
+// Scroll certain amounts from current position 
+window.scrollBy({
+    top: 100, // could be negative value
+    left: 0,
+    behavior: 'smooth'
+});
+
+// Scroll to a certain element
+document.querySelector('section').scrollIntoView({
+    behavior: 'smooth'
+});
