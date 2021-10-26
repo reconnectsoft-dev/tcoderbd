@@ -321,7 +321,7 @@ body {
 }
 
 .about__user_friendly_bottom_margin {
-    background: 2px solid black;
+    background: 2px solid var(--tCoderBD_third_background_transparent_Color);
 }
 
 

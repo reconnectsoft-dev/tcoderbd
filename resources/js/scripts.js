@@ -19,7 +19,7 @@ for (var i = 0; i < elems.length; i++)
 
 //  Add class on Scroll Navbar and Change Navbar Color 
 
-var navbar = document.querySelector('navbar')
+var navbar = document.querySelector('nav')
 var navbarCollapse = document.querySelector('.navbar-collapse')
 var sections = document.querySelectorAll("section");
 
@@ -48,7 +48,7 @@ onscroll = function() {
 };
 
 var removeAllActiveClasses = function() {
-    document.querySelectorAll("navbar li a").forEach((el) => {
+    document.querySelectorAll("nav li a").forEach((el) => {
         el.classList.remove("navbar__active");
     });
 };
@@ -59,7 +59,7 @@ var addActiveClass = function(id) {
     document.querySelector(selector).classList.add("navbar__active");
 };
 
-var navLinks = document.querySelectorAll("navbar li a");
+var navLinks = document.querySelectorAll("nav li a");
 
 navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
